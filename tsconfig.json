@@ -1,21 +1,16 @@
 {
     "compilerOptions": {
-        "target": "esnext",
+        "module": "ESNext",
+        "target": "ES2018",
         "declaration": true,
         "moduleResolution": "Node",
-        "esModuleInterop": true,
         "allowJs": true,
-        "emitDeclarationOnly": true,
-        "isolatedModules": true,
         "sourceMap": true,
         "strict": true,
-        "noImplicitAny": true,
-        "baseUrl": ".",
-        "forceConsistentCasingInFileNames": true,
-        "skipLibCheck": true,
         "outDir": "./dist",
-        "rootDir": "src",
+        "rootDir": "./src",
         "noEmitOnError": true,
+        "esModuleInterop": true,
         "lib": [
             "ESNext"
         ],
@@ -24,9 +19,11 @@
         ],
         "types": [
             "@types/node",
+            "@types/jest",
         ]
     },
     "include": [
+        "./src/*.ts",
         "./src/**/*.ts"
     ],
     "exclude": [
