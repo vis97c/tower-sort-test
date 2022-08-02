@@ -1,0 +1,36 @@
+{
+    "compilerOptions": {
+        "target": "esnext",
+        "declaration": true,
+        "moduleResolution": "Node",
+        "esModuleInterop": true,
+        "allowJs": true,
+        "emitDeclarationOnly": true,
+        "isolatedModules": true,
+        "sourceMap": true,
+        "strict": true,
+        "noImplicitAny": true,
+        "baseUrl": ".",
+        "forceConsistentCasingInFileNames": true,
+        "skipLibCheck": true,
+        "outDir": "./dist",
+        "rootDir": "src",
+        "noEmitOnError": true,
+        "lib": [
+            "ESNext"
+        ],
+        "typeRoots": [
+            "node_modules/@types"
+        ],
+        "types": [
+            "@types/node",
+        ]
+    },
+    "include": [
+        "./src/**/*.ts"
+    ],
+    "exclude": [
+        "node_modules",
+        "dist"
+    ]
+}

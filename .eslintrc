@@ -1,0 +1,73 @@
+{
+    "root": true,
+    "parserOptions": {
+        "parser": "@typescript-eslint/parser",
+        "requireConfigFile": false,
+        "sourceType": "module",
+        "allowImportExportEverywhere": false,
+        "ecmaVersion": 2018,
+        "ecmaFeatures": {
+            "globalReturn": false
+        }
+    },
+    "env": {
+        "node": true
+    },
+    "plugins": [
+        "@typescript-eslint",
+        "prettier"
+    ],
+    "rules": {
+        "curly": [
+            "error",
+            "multi-line"
+        ],
+        "quotes": [
+            "error",
+            "double",
+            {
+                "allowTemplateLiterals": true,
+                "avoidEscape": true
+            }
+        ],
+        "eqeqeq": [
+            "error",
+            "smart"
+        ],
+        "unicorn/number-literal-case": "off",
+        "no-tabs": "off",
+        "comma-dangle": "off",
+        "semi": "off",
+        "arrow-parens": "off",
+        "space-before-function-paren": "off",
+        "indent": "off",
+        "no-extra-boolean-cast": "off",
+        "no-mixed-spaces-and-tabs": [
+            "warn",
+            "smart-tabs"
+        ],
+        "spaced-comment": "off",
+        "no-use-before-define": "off",
+        "no-unused-vars": "off",
+        "no-redeclare": "off",
+        "prettier/prettier": [
+            "error",
+            {
+                "endOfLine": "auto",
+                "usePrettierrc": true
+            }
+        ],
+        "@typescript-eslint/no-use-before-define": [
+            "error"
+        ],
+        "@typescript-eslint/no-dupe-class-members": [
+            "error"
+        ],
+        "@typescript-eslint/no-unused-vars": [
+            "warn"
+        ],
+        "@typescript-eslint/no-redeclare": [
+            "error"
+        ]
+    }
+}
